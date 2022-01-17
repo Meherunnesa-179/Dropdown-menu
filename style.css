@@ -64,6 +64,7 @@ nav ul li {
 }
 
 nav ul li a {
+    transition: 0.3s;
     font-family: "Georgia", serif;
     color: #fff;
     font-weight: 400;
@@ -85,19 +86,20 @@ nav ul ul {
     text-transform: capitalize;
     flex-direction: column;
     position: absolute;
-    background-color: rgb(6, 6, 44);
-    /* left: -100000000000px; */
-    left: 0;
+    background: rgb(6, 6, 44);
+    left: -100000000000px;
     width: 130px;
-    top: 60px;
+    top: 59px;
+    padding: 10px 0;
 }
 
-nav ul ul li:hover  ul{
-    left: 130px;
+
+nav ul  li:hover  ul{
+    left: 0 ;
 }
 
-nav ul li:hover ul{
-    left: 0;
+nav ul li:hover ul ul {
+    left: -10000000000px;
 }
 nav ul  ul li {
     padding: 5px 20px;
@@ -109,5 +111,20 @@ nav ul  ul li:hover{
 
 nav ul ul ul {
     left: -13000000000000000px;
+    top: 0;
+}
+
+nav ul ul li:hover ul {
+    left: 130px;
+    top: 0;
+  }
+  
+  nav ul ul li:hover ul ul {
+    left: -999999px;
+    top: 0;
+  }
+
+nav ul ul ul li:hover ul {
+    left: 130px;
     top: 0;
 }
