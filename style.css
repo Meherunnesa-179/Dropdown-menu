@@ -1,0 +1,113 @@
+/*===============
+                Common CSS 
+                ================ */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px ;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* =====================================
+                header style 
+                        =========================== */
+
+header {
+    background-color: rgb(22, 22, 65);
+}
+
+.inner_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_area {
+    font-family: "Georgia", serif;
+    transition: 0.3s ;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 2;
+
+}
+nav ul{
+    display: flex;
+}
+
+nav ul li {
+    padding: 21px;
+    position: relative;
+}
+
+nav ul li a {
+    font-family: "Georgia", serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+nav ul li:hover a {
+    color: yellow;
+}
+
+nav ul li:hover ul a {
+    color: white;
+}
+/*==========================
+                dropdown
+                    ==========================*/  
+
+nav ul ul {
+    text-transform: capitalize;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(6, 6, 44);
+    /* left: -100000000000px; */
+    left: 0;
+    width: 130px;
+    top: 60px;
+}
+
+nav ul ul li:hover  ul{
+    left: 130px;
+}
+
+nav ul li:hover ul{
+    left: 0;
+}
+nav ul  ul li {
+    padding: 5px 20px;
+}
+
+nav ul  ul li:hover{
+    background-color: rgb(141, 141, 20);
+}
+
+nav ul ul ul {
+    left: -13000000000000000px;
+    top: 0;
+}
